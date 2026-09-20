@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>✅ Task Manager</h1>
+    <div id="userBar" class="hidden">
+      <span id="usernameDisplay"></span>
+      <button class="secondary" onclick="logout()">Log out</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Auth view: login/signup -->
+    <section id="authView">
+      <div class="auth-box">
+        <div class="tabs">
+          <button id="loginTab" class="tab active" onclick="switchTab('login')">Log In</button>
+          <button id="signupTab" class="tab" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+
+        <form id="authForm">
+          <label>Username</label>
+          <input type="text" id="authUsername" required autocomplete="username" />
+
+          <label>Password</label>
+          <input type="password" id="authPassword" required autocomplete="current-password" />
+
+          <button type="submit" id="authSubmitBtn">Log In</button>
+          <p id="authError" class="error"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Task view: shown after login -->
+    <section id="taskView" class="hidden">
+      <form id="newTaskForm">
+        <input type="text" id="newTaskInput" placeholder="Add a new task..." required />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="taskList"></ul>
+      <p id="emptyTasks" class="empty-state hidden">No tasks yet — add one above.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

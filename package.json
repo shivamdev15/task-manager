@@ -1,0 +1,18 @@
+{
+  "name": "task-manager-auth",
+  "version": "1.0.0",
+  "description": "A personal task manager with real user accounts — sign up, log in, and manage your own private tasks.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
