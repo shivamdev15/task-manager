@@ -1,6 +1,8 @@
-# ✅ Task Manager
+<img width="931" height="659" alt="{A33E70C6-3156-446A-A555-0AAD6C7878D7}" src="https://github.com/user-attachments/assets/2fe6bf1d-61dd-40ae-97a0-88290c00b171" /># ✅ Task Manager
 
 A personal task manager with real user accounts — sign up, log in, and manage your own private list of tasks.
+
+**🔗 Live demo: [task-manager-9ebp.onrender.com](https://task-manager-9ebp.onrender.com)** (may take 30-50 seconds to load on first visit — free tier sleeps when idle. Note: accounts/tasks reset on redeploys since this uses the free tier's temporary storage.)
 
 ## What it does
 
